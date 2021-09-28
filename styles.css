@@ -30,20 +30,7 @@ body {
     color: var(--text1);
     padding: 2rem;
     background-size: cover;
-
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        background-image: url("img/pattern.svg");
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-image: url("img/pattern_dark.svg");
-        color: white;
-    }
+    background-image: url("img/pattern.svg");
 }
 
 .review-container {
@@ -52,8 +39,8 @@ body {
     border-radius: .5rem;
     position: relative;
     text-align: center;
-
 }
+
 
 .review-container::before {
     content: "";
@@ -228,5 +215,21 @@ body {
     margin: auto;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url("img/pattern_dark.svg");
+        color: white;
+    }
 
+    .review-container {
+        background-color: midnightblue;
+    }
 
+    .review-header p, .review-location {
+        color: #b3b3b3;
+    }
+
+    .arrow {
+        color: white;
+    }
+}
