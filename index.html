@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Playing with Light/Dark Theme</title>
+</head>
+<body>
+<div class="review-container">
+    <div class="review-header">
+        <h2>What Our Clients Say</h2>
+        <p>We partner with some pretty amazing people! Here’s what they say about us.</p>
+    </div>
+    <div class="review-content">
+        <button class="arrow" id="arrow-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10"
+                        stroke-width="16"></circle>
+                <polyline points="121.941 161.941 88 128 121.941 94.059" fill="none" stroke="currentColor"
+                          stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="88" y1="128" x2="168" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></line>
+            </svg>
+        </button>
+        <div class="reviews">
+            <div class="review">
+                <div class="review-headshot">
+                    <img src="img/face1.jpeg" alt="Elisa Gardner">
+                </div>
+                <p class="review-name"><strong>Elisa Gardner</strong></p>
+                <p class="review-location">Las Vegas, Nevada</p>
+                <div class="review-stars">
+                    <img src="img/full-star.svg" alt="star">
+                    <img src="img/full-star.svg" alt="star">
+                    <img src="img/full-star.svg" alt="star">
+                    <img src="img/full-star.svg" alt="star">
+                    <img src="img/full-star.svg" alt="star">
+                </div>
+                <p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur
+                    eligendi fugit illo in nam, quisquam ratione saepe sit voluptates.</p>
+            </div>
+        </div>
+
+        <button class="arrow" id="arrow-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10"
+                        stroke-width="16"></circle>
+                <polyline points="134.059 161.941 168 128 134.059 94.059" fill="none" stroke="currentColor"
+                          stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                <line x1="88" y1="128" x2="168" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="16"></line>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
