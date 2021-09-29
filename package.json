@@ -1,0 +1,24 @@
+{
+  "name": "lightdark",
+  "version": "1.0.0",
+  "description": "Testing Light/Dark Mode",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BD4vid777/LightDark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BD4vid777/LightDark/issues"
+  },
+  "homepage": "https://github.com/BD4vid777/LightDark#readme"
+}

@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type='image/x-icon' href="favicon.ico">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="main.js"></script>
+    <meta name="description" content="Simple test page to play with light/dark mode">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Playing with Light/Dark Theme</title>
 </head>
 <body>
+<audio src="sounds/audio_light-on.mp3"
+       data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184 under CC BY-NC 3.0"
+       class="theme-audio-light-on"></audio>
+<audio src="sounds/audio_light-off.mp3"
+       data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184 under CC BY-NC 3.0"
+       class="theme-audio-light-off"></audio>
 <div class="review-container">
+    <button class="theme" role="switch" aria-label="light/dark mode"></button>
     <div class="review-header">
         <h2>What Our Clients Say</h2>
         <p>We partner with some pretty amazing people! Here’s what they say about us.</p>
     </div>
     <div class="review-content">
-        <button class="arrow" id="arrow-left">
+        <button class="arrow" id="arrow-left" role="switch" aria-label="move left">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
                 <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10"
@@ -28,73 +38,10 @@
             </svg>
         </button>
         <div class="reviews">
-            <div class="review">
-                <div class="review-headshot">
-                    <img src="img/face1.jpeg" alt="Elisa Gardner">
-                </div>
-                <p class="review-name"><strong>Elisa Gardner</strong></p>
-                <p class="review-location">Las Vegas, Nevada</p>
-                <div class="review-stars">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                </div>
-                <p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur
-                    eligendi fugit illo in nam, quisquam ratione saepe sit voluptates.</p>
-            </div>
-            <div class="review">
-                <div class="review-headshot">
-                    <img src="img/face1.jpeg" alt="Elisa Gardner">
-                </div>
-                <p class="review-name"><strong>Elisa Gardner</strong></p>
-                <p class="review-location">Las Vegas, Nevada</p>
-                <div class="review-stars">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                </div>
-                <p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur
-                    eligendi fugit illo in nam, quisquam ratione saepe sit voluptates.</p>
-            </div>
-            <div class="review">
-                <div class="review-headshot">
-                    <img src="img/face1.jpeg" alt="Elisa Gardner">
-                </div>
-                <p class="review-name"><strong>Elisa Gardner</strong></p>
-                <p class="review-location">Las Vegas, Nevada</p>
-                <div class="review-stars">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                </div>
-                <p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur
-                    eligendi fugit illo in nam, quisquam ratione saepe sit voluptates.</p>
-            </div>
-            <div class="review">
-                <div class="review-headshot">
-                    <img src="img/face1.jpeg" alt="Elisa Gardner">
-                </div>
-                <p class="review-name"><strong>Elisa Gardner</strong></p>
-                <p class="review-location">Las Vegas, Nevada</p>
-                <div class="review-stars">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                    <img src="img/full-star.svg" alt="star">
-                </div>
-                <p class="review-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur
-                    eligendi fugit illo in nam, quisquam ratione saepe sit voluptates.</p>
-            </div>
+
         </div>
 
-        <button class="arrow" id="arrow-right">
+        <button class="arrow" id="arrow-right" role="switch" aria-label="move right">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
                 <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-miterlimit="10"
@@ -107,5 +54,6 @@
         </button>
     </div>
 </div>
+<script type="module" src="main.js"></script>
 </body>
 </html>
