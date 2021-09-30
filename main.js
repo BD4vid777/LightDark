@@ -1,5 +1,3 @@
-import './styles.css';
-
 let reviews;
 let slideIndex = 0;
 
