@@ -5,4 +5,7 @@ This project is just for fun to test some features - with some contetnt generate
 
 ## SneakPeak
 
+![Preview](https://github.com/BD4vid777/LightDark/blob/main/img/SneakPeak.png)
+
+### LiveDemo
 -> https://bd4vid777.github.io/LightDark/
