@@ -1,3 +1,13 @@
+const $el = document.querySelector(".review-container");
+
+// Loading finished
+setTimeout(() => {
+    $el.classList.remove("skeleton");
+    $el
+        .querySelectorAll(".hide-text")
+        .forEach((el) => el.classList.remove("hide-text"));
+}, 4000);
+
 let reviews;
 let slideIndex = 0;
 
@@ -28,10 +38,10 @@ function loadReviews(review) {
         <div class="review-headshot">
             <img src="${review.headshot}" alt="${review.name}">
         </div>
-        <p class="review-name"><strong>${review.name}</strong></p>
-        <p class="review-location">${review.location}</p>
+        <p class="review-name hide-text"><strong>${review.name}</strong></p>
+        <p class="review-location hide-text">${review.location}</p>
         <div class="review-stars">${loadStars(review.stars)}</div>
-        <p class="review-body">${review.body}</p>
+        <p class="review-body hide-text">${review.body}</p>
     </div>
     `;
 }

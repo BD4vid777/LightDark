@@ -45,7 +45,50 @@ body {
     place-items: center;
     opacity: .5;
     transition: all 300ms ease-in-out;
+}
 
+.review-container.skeleton .hide-text {
+    background: #e2e2e2;
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-container.skeleton .hide-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #b3b3b3;
+    animation: blink 4s linear infinite;
+    filter: blur(5px);
+}
+
+@keyframes blink {
+    0% {
+        opacity: .1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+
+.review-container.skeleton .theme {
+    background: #e2e2e2;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    animation: blink 4s linear infinite;
+}
+
+.review-container.skeleton .theme img {
+    display: none;
 }
 
 .theme:hover {
@@ -105,6 +148,10 @@ body {
     filter: blur(1px);
 }
 
+.review-container.skeleton h2::before {
+    display: none;
+}
+
 .review-header p {
     color: var(--text2);
 }
@@ -129,12 +176,24 @@ body {
     cursor: pointer;
 }
 
+.review-container.skeleton .arrow {
+    background: #e2e2e2;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    animation: blink 4s linear infinite;
+}
+
 .arrow:is(:hover, :focus) {
     color: var(--text1);
 }
 
 .arrow svg {
     pointer-events: none;
+}
+
+.review-container.skeleton .arrow svg {
+    display: none;
 }
 
 #arrow-right {
@@ -157,6 +216,10 @@ body {
     block-size: min(50px, 100%);
     filter: blur(1px);
     transition: all 250ms ease-in-out;
+}
+
+.review-container.skeleton #arrow-right::before {
+    display: none;
 }
 
 #arrow-right:hover::before, #arrow-right:focus::before {
@@ -183,6 +246,10 @@ body {
     block-size: min(50px, 100%);
     filter: blur(1px);
     transition: all 250ms ease-in-out;
+}
+
+.review-container.skeleton #arrow-left::before {
+    display: none;
 }
 
 #arrow-left:hover::before, #arrow-left:focus::before {
@@ -214,6 +281,17 @@ body {
     border-radius: 50%;
 }
 
+.review-container.skeleton .review-headshot {
+    background: #e2e2e2;
+    border-radius: 50%;
+    animation: blink 4s linear infinite;
+}
+
+.review-container.skeleton .review-headshot img {
+    display: none;
+}
+
+
 .review-headshot::before {
     content: "";
     position: absolute;
@@ -225,10 +303,26 @@ body {
     filter: blur(4px);
 }
 
+.review-container.skeleton .review-headshot::before {
+    display: none;
+}
+
 .review-name {
     letter-spacing: .05rem;
     font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.6rem);
 }
+
+.review-container.skeleton .review-stars {
+    background: #e2e2e2;
+    width: 100px;
+    height: 20px;
+    animation: blink 4s linear infinite;
+}
+
+.review-container.skeleton .review-stars img {
+    display: none;
+}
+
 
 .review-location {
     color: var(--text2);
